@@ -4,5 +4,9 @@
 #include "Factorial.h"
 
 int factorial(int value) {
-  return 0;
+  int silnia=1;
+    for(int i=value;i>=1;i--){
+        silnia=silnia*i; /*iteracyjnie*/
+    }
+    return silnia;
 }
