@@ -6,7 +6,7 @@
 int factorial(int value) {
   int silnia=1;
     for(int i=value;i>=1;i--){
-        silnia=silnia*i; /*iteracyjnie*/
+        silnia=silnia*i; /*iteracyjn*/
     }
     return silnia;
 }
