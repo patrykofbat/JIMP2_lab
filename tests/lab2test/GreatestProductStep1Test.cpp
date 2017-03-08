@@ -13,7 +13,7 @@ class GreatestProductOfStep1Tests : public ::testing::TestWithParam<TestParam>, 
 
 };
 
-TEST_P(GreatestProductOfStep1Tests, PolybiusCryptShouldReturnExpectedResult) {
+TEST_P(GreatestProductOfStep1Tests, GreatestProductOfPositiveNumbersNfixedTo2ShouldReturnExpectedResult) {
   const TestParam &p = GetParam();
   int expected = p.second;
   const std::vector<int> &numbers = p.first.first;
@@ -22,21 +22,19 @@ TEST_P(GreatestProductOfStep1Tests, PolybiusCryptShouldReturnExpectedResult) {
             << "Did call GreatestProductOf(" << utility::ToString<int>(numbers) << ", " << N << ")\n";
 }
 
-std::vector<TestParam> greatest_product_test_data{
+std::vector<TestParam> greatest_product_test_positive_n_eq_2_data{
     {{{0, 1, 2, 3, 4}, 2}, 12},
-    {{{0, 1, 2, 3, 4}, 3}, 24},
-    {{{0, 1, 2, 3, 4}, 4}, 24},
     {{{6, 6, 6}, 2}, 36},
-    {{{9,8,3,5,8,1,3,5,10},2}, 90},
-    {{{10,7,7,5,8,8},3}, 640},
-    {{{-11,8,2,9,9,8,5,-1},2}, 81},
-    {{{-11,8,2,9,-9,8,5,-1},2}, 99},
-    {{{-11,-9,-1},2}, 99},
-    {{{-11,8,2,9,-9,8,5,-1},3}, 11*9*9},
-    {{{-11,-90,-4,-5,-9,-1,-3,1},3}, 11*90},
-    {{{-11,-90,-4,-5,-9,-1,-3,-1},3}, -3}};
+    {{{9, 8, 3, 5, 8, 1, 3, 5, 10}, 2}, 90},
+    {{{17, 5, 9, 1000, 15689, 57, 89, 10, 89, 283, 197, 0, 0, 132, 45, 78, 18, 15, 89,
+       19203, 98, 14, 78, 45, 35, 23, 24, 25, 46, 45, 756, 7567, 123, 890, 99, 98, 51,
+       991, 9123, 8912, 89534, 8923, 1823, 7385, 91, 1748, 1, 1, 893, 2813,
+       1381, 23, 563, 645, 24, 24, 51, 839, 38, 34, 35, 123, 324, 9283, 22, 19}, 2}, 1719321402},
+    {{{1, 1}, 2}, 1},
+    {{{0, 1}, 2}, 0},
+    {{{3789, 999}, 2}, 3785211}};
 
 INSTANTIATE_TEST_CASE_P(GreatestProductOfStep1Tests,
                         GreatestProductOfStep1Tests,
-                        ::testing::ValuesIn(greatest_product_test_data));
+                        ::testing::ValuesIn(greatest_product_test_positive_n_eq_2_data));
 
