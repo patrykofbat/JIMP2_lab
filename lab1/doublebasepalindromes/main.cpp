@@ -7,7 +7,8 @@
 
 using namespace std;
 
-int main(){
+int main()
+{
     uint64_t suma=0;
    for(int i=1;i<=1000000;i++){
        if(is_bin_pal(i)==1 && is_dec_pal(i)==1)
