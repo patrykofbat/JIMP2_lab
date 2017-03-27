@@ -10,3 +10,7 @@ target_include_directories(libsimplejson PUBLIC .)
 add_executable(simplejson ${SOURCE_FILES} main.cpp)
 
 target_link_libraries(simplejson libsimplejson)
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master

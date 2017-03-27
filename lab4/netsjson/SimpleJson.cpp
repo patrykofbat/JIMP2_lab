@@ -1,4 +1,5 @@
 //
+<<<<<<< HEAD
 // Created by JA on 27.03.2017.
 //
 
@@ -43,3 +44,13 @@ JsonValue JsonValue:: ValueByName (string test) {
 
 
 
+=======
+// Created by patryk on 21.03.17.
+//
+
+namespace nets{
+
+
+
+}
+>>>>>>> origin/master

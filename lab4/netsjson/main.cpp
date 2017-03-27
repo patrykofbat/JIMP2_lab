@@ -1,4 +1,5 @@
 //
+<<<<<<< HEAD
 // Created by JA on 27.03.2017.
 //
 
@@ -16,3 +17,8 @@ int main(){
 
     return 0;
 }
+=======
+// Created by patryk on 21.03.17.
+//
+
+>>>>>>> origin/master
