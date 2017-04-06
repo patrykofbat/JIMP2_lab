@@ -10,7 +10,7 @@ set(REVERSE_STRING_SRC ReverseStringTest.cpp)
 set(PALINDROME_SRC PalindromeTest.cpp)
 set(MULTIPLICATION_TABLE_SRC MultiplicationTableTest.cpp)
 set(DOUBLE_BASE_PALINDROME_SRC DoubleBasePalindromeTest.cpp)
-set(SOURCE_FILES ${FACTORIAL_SRC} ${REVERSE_STRING_SRC} ${PALINDROME_SRC} ${MULTIPLICATION_TABLE_SRC} ${DOUBLE_BASE_PALINDROME_SRC} ../../lab4/netsjson/SimpleJson.cpp ../../lab4/netsjson/SimpleJson.h ../../lab4/netsjson/main.cpp)
+set(SOURCE_FILES ${FACTORIAL_SRC} ${REVERSE_STRING_SRC} ${PALINDROME_SRC} ${MULTIPLICATION_TABLE_SRC} ${DOUBLE_BASE_PALINDROME_SRC} ../../lab4/netsjson/SimpleJson.cpp ../../lab4/netsjson/SimpleJson.h ../../lab4/netsjson/main.cpp ../../Matrix/Matrix.cpp ../../Matrix/Matrix.h ../../lab5/Matrix/matrix.cpp ../../lab5/Matrix/matrix.h ../../lab5/Matrix/main.cpp)
 
 set(GTEST_LIBS gtest gtest_main gmock gmock_main)
 
