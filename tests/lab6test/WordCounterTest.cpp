@@ -7,6 +7,7 @@
 #include <MemLeakTest.h>
 #include "WordCounter.h"
 
+typedef WordCounter wordCounter;
 using ::datastructures::WordCounter;
 using ::datastructures::Counts;
 using ::datastructures::Word;
@@ -23,7 +24,7 @@ TEST_F(WordCounterTests, IsAbleToCreateEmptyWordCounter) {
 }
 
 TEST_F(WordCounterTests, IsAbleToInitilzeWordCounter) {
-  WordCounter counter {Word("enigma"), Word("puzzle")};
+    wordCounter
   EXPECT_EQ(2,counter.DistinctWords());
   EXPECT_EQ(2,counter.TotalWords());
 }
